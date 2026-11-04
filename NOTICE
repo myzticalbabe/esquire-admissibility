@@ -1,0 +1,28 @@
+ESQUIRE ADMISSIBILITY
+Copyright 2026 the esquire-admissibility contributors
+
+This product is licensed under the Apache License, Version 2.0 (the "License").
+You may not use the files in this project except in compliance with the License.
+A copy of the License is in the file LICENSE.
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+--------------------------------------------------------------------------
+Attribution notes
+
+No third-party runtime dependency is bundled: `esquire_admissibility.py` imports
+only the standard library, and the pyproject declares no dependencies. `pytest`
+is a development dependency only.
+
+The legal authorities named in the instrument and in README.md are cited, not
+reproduced. Rule text was read at the Cornell Legal Information Institute's
+edition of the Federal Rules of Evidence; the cases (*Daubert*, *Crawford*,
+*Melendez-Diaz*, *Bullcoming*, *Mata*) are cited by reporter. No rule text, case
+text, or syllabus is included in this repository, so no such text is relicensed
+here.
+
+This repository is an instrument and an audit. It is not legal advice, and it has
+not been reviewed by a lawyer.

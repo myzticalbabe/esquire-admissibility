@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esquire-admissibility"
+version = "0.1.0"
+description = "A proffer instrument for machine-produced opinions: nine admissibility gates, and what they cannot see."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+# No runtime dependencies, deliberately. The instrument reads a JSON record and
+# prints a report; a legal-admissibility checklist that pulls in a numerical
+# stack has added an attack surface and a licence obligation for arithmetic.
+# The whole module is stdlib, and that is a property worth keeping legible.
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Legal Industry",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Quality Assurance",
+]
+# Author identity is deliberately absent: the source tree this was extracted
+# from carries no recorded name for public attribution. Fill `authors` in before
+# a PyPI upload -- a placeholder name is worse than none.
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+esquire-admissibility = "esquire_admissibility:main"
+
+[project.urls]
+# No homepage is asserted: this repository has not been published, and a URL
+# pointing at nothing is a worse promise than an absent one.
+
+[tool.setuptools]
+py-modules = ["esquire_admissibility"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
