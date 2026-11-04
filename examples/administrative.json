@@ -1,0 +1,84 @@
+{
+  "proffer": {
+    "case": "In re Turbine Supply Arbitration",
+    "offered_by": "Claimant",
+    "purpose": "To show the schedule-delay analysis the claims tool produced",
+    "ai_assistance_disclosed": true,
+    "forum": "arbitration"
+  },
+  "witness": {
+    "kind": "human",
+    "name": "A. Expert",
+    "qualifications": [
+      "valuation",
+      "ten years in the field"
+    ],
+    "reviewed_output": true
+  },
+  "inputs": {
+    "records": [
+      {
+        "id": "r1",
+        "source": "ledger export",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "id": "r2",
+        "source": "audited accounts",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ],
+    "sufficiency_statement": "both years of records, complete and hashed"
+  },
+  "method": {
+    "model": {
+      "name": "valuation-model",
+      "version": "3.2.1",
+      "provenance": "internal weights, frozen build, checksum on file"
+    },
+    "evaluation": {
+      "error_rate": 0.04,
+      "test_set": "240 held-out filings"
+    },
+    "peer_review": true,
+    "general_acceptance": "accepted"
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "text": "the enterprise value on the offer date",
+      "inputs": [
+        "r1",
+        "r2"
+      ],
+      "citations": []
+    }
+  ],
+  "authentication": {
+    "output_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "custody": [
+      "generated",
+      "exported",
+      "stored"
+    ]
+  },
+  "hearsay": {
+    "posture": "machine_record",
+    "business_records": {
+      "custodian": "D. Recordskeeper",
+      "regular_practice": true
+    }
+  },
+  "review": {
+    "name": "A. Expert",
+    "authority_to_change": true,
+    "recorded_at": "2026-11-04",
+    "changes_made": 2
+  },
+  "administrative": {
+    "standard": "reliable, probative, and substantial evidence on the whole record",
+    "standard_source": "5 U.S.C. 556(d); agency rule 1.33",
+    "disclosed_to_opposing_party": true,
+    "opportunity_to_respond": true
+  }
+}
