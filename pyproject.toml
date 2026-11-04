@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "esquire-admissibility"
 version = "0.1.0"
-description = "A proffer instrument for machine-produced opinions: nine admissibility gates, and what they cannot see."
+description = "A proffer instrument for machine-produced opinions: ten admissibility gates across three evidence postures, and what they cannot see."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
@@ -36,8 +36,8 @@ dev = ["pytest>=7"]
 esquire-admissibility = "esquire_admissibility:main"
 
 [project.urls]
-# No homepage is asserted: this repository has not been published, and a URL
-# pointing at nothing is a worse promise than an absent one.
+Homepage = "https://github.com/myzticalbabe/esquire-admissibility"
+Issues = "https://github.com/myzticalbabe/esquire-admissibility/issues"
 
 [tool.setuptools]
 py-modules = ["esquire_admissibility"]
