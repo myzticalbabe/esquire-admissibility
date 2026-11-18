@@ -417,7 +417,9 @@ def test_gate_table_covers_every_gate_and_states_a_falsifier():
         assert meta["negative_control"]
     assert GATE_METADATA[7]["applies_to"] == "criminal posture only"
     assert GATE_METADATA[8]["applies_to"] == "criminal posture only"
-    assert GATE_METADATA[9]["applies_to"] == "administrative and arbitration postures only"
+    assert (
+        GATE_METADATA[9]["applies_to"] == "administrative and arbitration postures only"
+    )
     text = render_gates()
     assert "negative control" in text
     assert "G7" in text
@@ -455,6 +457,8 @@ def test_every_gate_can_fail(gate_id):
     perturbations[gate_id](record)
 
     assert gate_state(evaluate(record), gate_id) == GAP
+
+
 @pytest.mark.parametrize(
     ("gate_id", "fixture", "block"),
     [
@@ -488,8 +492,6 @@ def test_every_gate_reads_a_missing_block_as_unaddressed(gate_id, fixture, block
 
     assert gate_state(report, gate_id) == UNVERIFIABLE
     assert report["verdict"] != VERDICT_READY
-
-
 
 
 def test_civil_record_applies_seven_gates_and_says_so():
@@ -673,7 +675,9 @@ def test_administrative_record_applies_g1_to_g5_g7_and_g10():
     assert "forum: administrative (stated)" in text
     assert "G6 (FRE hearsay)" in text
     assert "G10" in text
-    assert [line for line in text.splitlines() if line.startswith(("G6", "G8", "G9"))] == []
+    assert [
+        line for line in text.splitlines() if line.startswith(("G6", "G8", "G9"))
+    ] == []
 
 
 def test_administrative_record_without_the_block_is_incomplete_not_a_pass():

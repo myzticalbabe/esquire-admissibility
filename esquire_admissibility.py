@@ -402,7 +402,9 @@ def gate_2_inputs(record: dict[str, Any]) -> Finding:
 
     if problems:
         return Finding("G2", GAP, "; ".join(problems[:4]))
-    return Finding("G2", PASS, f"{len(records)} hashed input record(s), sufficiency stated")
+    return Finding(
+        "G2", PASS, f"{len(records)} hashed input record(s), sufficiency stated"
+    )
 
 
 def gate_3_method(record: dict[str, Any]) -> Finding:
@@ -438,7 +440,9 @@ def gate_3_method(record: dict[str, Any]) -> Finding:
 
     if problems:
         return Finding("G3", GAP, "; ".join(problems[:4]), notes)
-    return Finding("G3", PASS, "versioned, evaluated method with a measured error rate", notes)
+    return Finding(
+        "G3", PASS, "versioned, evaluated method with a measured error rate", notes
+    )
 
 
 def gate_4_application(record: dict[str, Any]) -> Finding:
@@ -532,7 +536,9 @@ def gate_5_authentication(record: dict[str, Any]) -> Finding:
 
     if cert is not None:
         return Finding("G5", PASS, "output hashed and certified under FRE 902(13)")
-    return Finding("G5", PASS, f"output hashed with a {len(custody)}-step custody chain")
+    return Finding(
+        "G5", PASS, f"output hashed with a {len(custody)}-step custody chain"
+    )
 
 
 def gate_6_hearsay(record: dict[str, Any]) -> Finding:
@@ -560,12 +566,16 @@ def gate_6_hearsay(record: dict[str, Any]) -> Finding:
             problems.append("no notice of the exception is recorded")
         if problems:
             return Finding("G6", GAP, "; ".join(problems))
-        return Finding("G6", PASS, f"exception stated: {_text(hearsay.get('exception'))}")
+        return Finding(
+            "G6", PASS, f"exception stated: {_text(hearsay.get('exception'))}"
+        )
 
     business = hearsay.get("business_records")
-    complete_business = isinstance(business, dict) and bool(
-        _text(business.get("custodian"))
-    ) and business.get("regular_practice") is True
+    complete_business = (
+        isinstance(business, dict)
+        and bool(_text(business.get("custodian")))
+        and business.get("regular_practice") is True
+    )
     if _cert_902_13(record) is not None or complete_business:
         return Finding("G6", PASS, "machine record with a qualifying predicate")
     return Finding(
@@ -606,7 +616,9 @@ def gate_7_review(record: dict[str, Any]) -> Finding:
 
     if problems:
         return Finding("G7", GAP, "; ".join(problems[:4]), notes)
-    return Finding("G7", PASS, "disclosed, reviewed by an authorised named human", notes)
+    return Finding(
+        "G7", PASS, "disclosed, reviewed by an authorised named human", notes
+    )
 
 
 def gate_8_testimonial(record: dict[str, Any]) -> Finding:
