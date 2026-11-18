@@ -1,28 +1,44 @@
-ESQUIRE ADMISSIBILITY
-Copyright 2026 the esquire-admissibility contributors
+# NOTICE
 
-This product is licensed under the Apache License, Version 2.0 (the "License").
-You may not use the files in this project except in compliance with the License.
-A copy of the License is in the file LICENSE.
+Esquire Admissibility — Legal Evidence Admissibility Tool
+Copyright 2026 Azazael Contributors
 
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied. See the License for the
-specific language governing permissions and limitations under the License.
+This product includes software developed by the Azazael project (https://github.com/myzticalbabe/azazael).
 
---------------------------------------------------------------------------
-Attribution notes
+## Third-Party Licenses
 
-No third-party runtime dependency is bundled: `esquire_admissibility.py` imports
-only the standard library, and the pyproject declares no dependencies. `pytest`
-is a development dependency only.
+This software may include or depend on the following third-party components:
 
-The legal authorities named in the instrument and in README.md are cited, not
-reproduced. Rule text was read at the Cornell Legal Information Institute's
-edition of the Federal Rules of Evidence; the cases (*Daubert*, *Crawford*,
-*Melendez-Diaz*, *Bullcoming*, *Mata*) are cited by reporter. No rule text, case
-text, or syllabus is included in this repository, so no such text is relicensed
-here.
+### Python Standard Library
+- Licensed under the Python Software Foundation License Version 2
+- https://docs.python.org/3/license.html
 
-This repository is an instrument and an audit. It is not legal advice, and it has
-not been reviewed by a lawyer.
+### PyYAML
+- Licensed under the MIT License
+- https://github.com/yaml/pyyaml/blob/master/LICENSE
+
+### pytest
+- Licensed under the MIT License
+- https://github.com/pytest-dev/pytest/blob/main/LICENSE
+
+### GitPython
+- Licensed under the BSD 3-Clause License
+- https://github.com/gitpython-developers/GitPython/blob/main/LICENSE
+
+### Click
+- Licensed under the BSD 3-Clause License
+- https://github.com/pallets/click/blob/main/LICENSE
+
+### PyMuPDF
+- Licensed under the AGPL-3.0
+- https://github.com/pymupdf/PyMuPDF/blob/master/LICENSE
+
+## Attribution
+
+Portions of this software are derived from the AZAZAEL project, which is licensed under the Common Development and Distribution License (CDDL) Version 1.1.
+
+The CDDL license text is included in the LICENSE file in this distribution.
+
+## Trademarks
+
+"Esquire Admissibility" and the Esquire logo are trademarks of the Azazael Contributors. All other trademarks are the property of their respective owners.

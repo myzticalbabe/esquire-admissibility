@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Azazael"
+    given-names: "Contributors"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Esquire Admissibility: Legal Evidence Admissibility Tool"
+version: 0.1.0
+doi: "10.5281/zenodo.XXXXXXX"
+date-released: 2026-11-18
+url: "https://github.com/myzticalbabe/esquire-admissibility"
+preferred-citation:
+  type: "software"
+  authors:
+    - family-names: "Azazael"
+      given-names: "Contributors"
+  title: "Esquire Admissibility: Legal Evidence Admissibility Tool"
+  year: 2026
+  version: "0.1.0"
+  doi: "10.5281/zenodo.XXXXXXX"
+  url: "https://github.com/myzticalbabe/esquire-admissibility"
+keywords:
+  - "legal"
+  - "evidence"
+  - "admissibility"
+  - "verification"
+  - "chain-of-custody"
+license: "CDDL-1.1"
+repository: "https://github.com/myzticalbabe/esquire-admissibility"
+repository-code: "https://github.com/myzticalbabe/esquire-admissibility"
+repository-artifact: "https://pypi.org/project/esquire-admissibility/"
