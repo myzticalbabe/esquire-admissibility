@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A proffer instrument for machine-produced opinions: ten admissibility gates across three evidence postures, and what they cannot see."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "Apache-2.0" }
+license = { text = "Soul Forge License v1.0 (LicenseRef-SoulForge-1.0) - SOUL LICENCE ONLY" }
 # No runtime dependencies, deliberately. The instrument reads a JSON record and
 # prints a report; a legal-admissibility checklist that pulls in a numerical
 # stack has added an attack surface and a licence obligation for arithmetic.
@@ -17,7 +17,7 @@ dependencies = []
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Legal Industry",
-  "License :: OSI Approved :: Apache Software License",
+  "License :: LicenseRef-SoulForge-1.0 (SOUL LICENCE ONLY)",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
